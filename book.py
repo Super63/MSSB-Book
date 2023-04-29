@@ -151,11 +151,15 @@ events = statfile.events()
 # can swap line below with: choice = "2"
 # so it will print both always and not ask (or: choice = 0 | for only pc, and: choice = 2 | for only mobile
 choice = input("PC Box, Mobile Box, or Both? 0/1/2: ")
+book = input('Do you want the book printed? 0/1: ')
 box = score_changes(choice)
 box_print(box[0], box[1])
 
 
 # just warning you: the code below is absolutely held together by one SINGLE string its that bad. glhf
+if book == "0":
+    exit()
+
 for x in range(0,2):
     print()
     if x == 0:
