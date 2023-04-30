@@ -145,8 +145,8 @@ def box_print(pc: bool, mobile: bool):
 # ex. "path/to/RioStatFile.json"
 jason = "C:/MSSB StatFiles/NCL S4/BigNick at Super63.json"
 statfile = create_json(jason)
-aplayer = statfile.player(1)
-hplayer = statfile.player(0)
+aplayer = statfile.player(0)
+hplayer = statfile.player(1)
 events = statfile.events()
 # can swap line below with: choice = "2"
 # so it will print both always and not ask (or: choice = 0 | for only pc, and: choice = 2 | for only mobile
