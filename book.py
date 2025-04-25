@@ -1,8 +1,5 @@
 import RioStatLib
 import json
-# yo. anyone reading this be prepared to die looking at this code. unironically not joking its that bad.
-# the code specifically for the box score is alright imo, but the rest is kinda :face_vomiting:. good luck out there
-# i tried to document a bit, its not enough lmao
 
 # creates usable stats from the json listed
 def create_json(file: str):
@@ -155,8 +152,6 @@ book = input('Do you want the book printed? 0/1: ')
 box = score_changes(choice)
 box_print(box[0], box[1])
 
-
-# just warning you: the code below is absolutely held together by one SINGLE string its that bad. glhf
 if book == "0":
     exit()
 
